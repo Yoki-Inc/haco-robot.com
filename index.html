@@ -10,15 +10,17 @@
 
 		<title>HACO｜HACOでプログラミングを学ぼう</title>
 
-		<!-- Google Fonts -->
+		<!-- Ext CSS -->
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<!-- CSS  -->
 		<link href="css/style.css" rel="stylesheet">
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 	</head>
@@ -26,7 +28,7 @@
 	<header id="header">
 		<div class="container nav-container">
 			<a href="#">
-				<h1 class="logo">HACO</h1>
+				<h1 class="logo">HACO<span>robot</span></h1>
 			</a>
 			<nav id="nav">
 				<ul>
@@ -50,10 +52,12 @@
 	</section>
 	<section id="product">
 		<div class="container">
-			<div class="row">
+			<div class="row" id="make-haco">
 				<div class="box text">
 					<div class="text-container">
-						<h2 class="lead green">HACOをつくろう。</h2>
+						<div class="lead green">
+							<h2>HACOをつくろう。</h2>
+						</div>
 						<p>HACOのパーツは、正確にレーザーカットされた木製の板。接着剤での貼付けと、ネジ止めだけで組み立てることができます。最後は付属のヤスリを使って綺麗に仕上げましょう。あなただけのHACOの完成です。</p>
 					</div>
 				</div>
@@ -63,7 +67,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="move-haco">
 				<div class="box">
 					<div class="img-figure" style="background-image:url(assets/move-haco.jpg)">
 						
@@ -71,29 +75,49 @@
 				</div>
 				<div class="box text">
 					<div class="text-container">
-						<h2 class="lead orange">HACOを動かそう。</h2>
+						<div class="lead orange">
+							<h2>HACOを動かそう。</h2>
+						</div>
 						<p>専用開発環境のHACREWを使ってプログラムを書いてみましょう。とても簡単に、でも複雑で高度なプログラムも作れます。HACOが踊れるようになったり、時間になると教えてくれたり、可能性は無限大です。</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" id="wcd">
 				<div class="text-container">
-					<h2 class="lead blue">HACOはできることがいっぱい。</h2>
+					<div class="lead blue">
+						<h2>HACOはできることがいっぱい。</h2>
+					</div>
 					<p>HACOはつくって動かせるだけではありません。会話をしたり、できることがどんどん増えていったりします。もちろんHACREWを使って新しい”できること”をつくることもできます。HACREWのストア機能を使えば自分でつくったプログラムを発表することもできます。</p>
 				</div>
 			</div>
+		</div>
+		<div class="slider-container">
+			<div class="fade left"></div>
+			<div class="fade right"></div>
 			<div class="slider">
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
-				<div>your content <img src="assets/move-haco.jpg" style="width: 60px"></div>
+				<span class="circle-container">
+					<div class="circle" style="background-image: url(assets/wcd_1.jpg); border:3px solid #10CBCE;">
+						<span>エアコンや<br>テレビを操作<br>してくれる</span>
+					</div>
+				</span>
+				<span class="circle-container">
+					<div class="circle" style="background-image: url(assets/wcd_2.jpg); border:3px solid #FF4A7A;">
+						<span>本の音読を<br>してくれる</span>
+					</div>
+				</span>
+				<span class="circle-container">
+					<div class="circle" style="background-image: url(assets/wcd_3.jpg); border:3px solid #FFBA00;">
+						<span>料理レシピを<br>教えてくれる</span>
+					</div>
+				</span>
+				<span class="circle-container">
+					<div class="circle" style="background-image: url(assets/wcd_4.jpg); border:3px solid #8A42E1;">
+						<span>その日のニュース<br>を教えてくれる</span>
+					</div>
+				</span>
 			</div>
+		</div>
+		<div class="container">
 			<div class="row">
 				<div class="box">
 					<div class="img-figure" style="background-image:url(assets/hacrew.jpg)">
@@ -101,7 +125,9 @@
 				</div>
 				<div class="box text">
 					<div class="text-container">
-						<h2 class="lead blue">HACREWは誰でも使える。</h2>
+						<div class="lead blue">
+							<h2>HACREWは誰でも使える。</h2>
+						</div>
 						<p>HACREWは誰でも使える開発環境です。ブロックプログラミングで簡単に、テキストプログラミングで高度なプログラミング。直感的にプログラミング言語を習得することも可能です一つブロックを並べると、該当する実際のコードが右上のエディタに表示されます。それを右下のエディタに書き写す。そんな流れでプログラミング言語を習得することが可能です。他にも学びに最適なクラスルーム機能やToDo機能、つくったプログラムを世の中に公開できるストア機能などが用意されています。</p>
 					</div>
 				</div>
@@ -150,13 +176,13 @@
 </body>
 <script>
 $(document).ready(function(){
-  $(window).scroll(function() {
-    if($(this).scrollTop() > $("#top").height()) {
-      $("header").addClass('active')
-    } else {
-      $("header").removeClass('active')
-    }
-  });
+	$(window).scroll(function() {
+		if($(this).scrollTop() > $("#top").height()) {
+			$("header").addClass('active')
+		} else {
+			$("header").removeClass('active')
+		}
+	});
 });
 </script>
 <script>
@@ -179,15 +205,24 @@ $('a[href^="#"]').click(function() {
 	return false;
 });
 </script>
-
-				
-
 <script>
 $('.slider').slick({
 	centerMode: true,
 	centerPadding: '60px',
 	slidesToShow: 3,
+	autoplay: true,
+	autoplaySpeed: 4000,
 	responsive: [
+	{
+		//max-width: 991
+		breakpoint: 992,
+		settings: {
+		    arrows: false,
+		    centerMode: true,
+		    centerPadding: '40px',
+		    slidesToShow: 3
+		}
+	},
 	{
 		breakpoint: 768,
 		settings: {
@@ -195,7 +230,7 @@ $('.slider').slick({
 		    centerMode: true,
 		    centerPadding: '40px',
 		    slidesToShow: 3
-	  }
+		}
 	},
 	{
 		breakpoint: 480,
@@ -207,6 +242,12 @@ $('.slider').slick({
 		}
 	}
 	]
+});
+</script>
+<script>
+$(function() {
+	var content = $('.circle-container');
+	content.height(content.width());
 });
 </script>
 
