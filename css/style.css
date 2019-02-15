@@ -493,6 +493,9 @@ section#getstart label {
     font-size: 15px;
 	text-align: left;
 }
+section#getstart select {
+	color: #757575;
+}
 section#getstart input[type="text"], select {
     font-size: 20px;
     padding: 0 10px;
@@ -554,10 +557,12 @@ section#getstart span a {
 		width: 70%;
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1700px) {
 	section#getstart .container .text-container {
 		width: 70%;
 	}
+}
+@media (min-width: 1200px) {
 	section#getstart form {
 		width: 75%;
 	}
