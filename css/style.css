@@ -384,12 +384,12 @@ section#top .text-container {
 	transform: translate(0, -50%);
 }
 @media (max-width: 767px) {
+	section#top {
+		margin-top: 70px;
+	}
 	section#top .text-container {
 		width: unset;
 		box-sizing: border-box;
-	}
-	section#top {
-		margin-top: 70px;
 	}
 }
 /**
