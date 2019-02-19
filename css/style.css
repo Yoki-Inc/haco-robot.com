@@ -510,7 +510,7 @@ section#getstart input[type="text"], select, label {
 	box-sizing: border-box;
 }
 section#getstart input[type="text"]:focus, select:focus {
-    border: 1px solid #00243b;
+    border: 1px solid #313743;
     outline: 0;
 }
 span.last_name {
@@ -529,22 +529,22 @@ section#getstart input[type="submit"] {
 	cursor: pointer;
 	padding: 10px 40px;
 	background: #fff;
-	color: #00243b;
+	color: #313743;
     font-weight: bold;
     font-family: inherit;
 	line-height: 1em;
 	transition: .3s;
-	border: 2px solid #00243b;
+	border: 2px solid #313743;
 }
 section#getstart input[type="submit"]:hover {
-	background: #00243b;
+	background: #313743;
 	color: #fff;
 	transition: .3s;
-	border: 2px solid #00243b;
+	border: 2px solid #313743;
 }
 section#getstart span {
 	font-size: 11px;
-	color: #000;
+	color: #313743;
 	font-weight: normal;
 }
 section#getstart span a {
