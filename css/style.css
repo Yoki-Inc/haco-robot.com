@@ -217,24 +217,30 @@ header.active {
 	text-shadow: none;
 	transition: .3s color;
 }
+header.active svg.logo {
+	fill: #8A42E1;
+	transition: .3s color;
+}
 header .nav-container {
 	height: 70px;
 	position: relative;
 	justify-content: space-between;
 	align-items: center;
 }
-header h1.logo {
-	font-family: "Avenir Next";
-	width: 30px;
-	height: auto;
+header svg.logo {
+	fill: #fff;
+	height: 30px;
+	width: auto;
 	position: absolute;
 	margin: 0;
 	z-index: 99;
-    left: 30px;
-    top: 0;
-   	line-height: 70px;
+	left: 30px;
+	top: 0;
+	padding: 20px 0;
 }
-
+header h1 {
+	display: none;
+}
 header a {
 	text-decoration: none;
 	color: unset;
@@ -258,6 +264,12 @@ header #toggle {
 }
 header #toggle img {
 	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+header #toggle .im {
+    position: absolute;
+    font-size: 30px;
     top: 20px;
     right: 30px;
 }
@@ -280,6 +292,16 @@ header #toggle img {
 	}
 }
 @media (max-width: 767px) {
+	header {
+		color: #8A42E1;
+		background-color: #fff;
+		text-shadow: none;
+		transition: .3s color;
+	}
+	header svg.logo {
+		fill: #8A42E1;
+		transition: .3s color;
+	}
 	header .container {
 		width: 100%!important;
 		max-width: none;
@@ -292,7 +314,7 @@ header #toggle img {
 		width: 100vw;
 		left: 0;
 		padding-top: 80px;
-		padding-left: 80px;
+		padding-left: 30px;
 		background-color: rgba(255,255,255,0.8);
 		display: none;
 	}
@@ -319,6 +341,14 @@ header #toggle img {
 		float: right;
 	}
 }
+@media (max-width: 440px) {
+	header nav ul li {
+		width: 100%;
+		font-size: 30px;
+		line-height: 2em;
+	}
+}
+
 /** 
 		#top
 					**/
@@ -330,6 +360,19 @@ section#top {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+section#top .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+section#top img {
+	display: none;
+    width: 100%;
+    height: auto;
+}
+
+
 section#top .text-container {
 	color: #FF4A7A;
 	text-shadow: 0px 0px 7px #ffffff8f;
@@ -344,6 +387,9 @@ section#top .text-container {
 	section#top .text-container {
 		width: unset;
 		box-sizing: border-box;
+	}
+	section#top {
+		margin-top: 70px;
 	}
 }
 /**
@@ -629,6 +675,7 @@ footer ul li a:hover {
 }
 #completed svg {
 	width: 15%;
+	min-width: 300px;
 	height: auto;
 	color: #000;
 }
