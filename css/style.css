@@ -6,8 +6,9 @@ html, body {
 	margin:0;
 }
 body {
-	font-family: Avenir, "Noto Sans", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif;
+	font-family: Avenir, "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif;
 	font-weight: bold!important;
+	color: #313743;
 }
 h1 {
 	font-size: 40px;
@@ -18,8 +19,8 @@ h2 {
 }
 p {
 	font-size: 20px;
-	letter-spacing: 0.03em;
-    line-height: 1.7em;
+	letter-spacing: 0em;
+    line-height: 1.5em;
     text-align: justify;
 }
 @media (max-width: 575px) {
@@ -150,9 +151,12 @@ section.box-content .box .img-figure {
 	width: 100%;
 	min-height: 300px;
 	background-repeat: no-repeat;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-size: cover;
 	background-position: center center;
+}
+section.box-content .row .box.text p {
+	margin-top: 0;
 }
 @media (max-width: 767px) {
 	section.box-content .row {
@@ -183,9 +187,6 @@ section.box-content .box .img-figure {
 		width: 70%;
 		padding-right: 30px;
 		position: relative;
-	}
-	section.box-content .row .box.text p {
-		margin-top: 0;
 	}
 }
 @media (max-width: 991px) {
@@ -233,10 +234,7 @@ header h1.logo {
     top: 0;
    	line-height: 70px;
 }
-header h1.logo span {
-	font-size: 0.7em;
-	margin-left: 3px;
-}
+
 header a {
 	text-decoration: none;
 	color: unset;
@@ -476,7 +474,7 @@ section#getstart .overray{
 
 section#getstart form {
 	width: 100%;
-	font-family: Avenir, "Noto Sans", "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif!important;
+	font-family: Avenir, "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif!important;
 	box-sizing: border-box;
 	margin: 0 auto;
     padding: 20px 60px 60px 60px;
@@ -576,13 +574,13 @@ section#getstart span a {
 		footer 
 					**/
 footer {
-	background-color: #00253A;
+	background-color: #313743;
 	height: 160px;
 	position: relative;
 }
 footer span {
 	position: absolute;
-	left: 10px;
+	right: 10px;
 	bottom: 10px;
 	color: #fff;
 	opacity: 0.5;
@@ -592,7 +590,7 @@ footer ul {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	right: 10px;
+	left: 10px;
 	bottom: 10px;
 }
 footer ul li {
