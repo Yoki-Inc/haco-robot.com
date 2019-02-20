@@ -343,9 +343,7 @@ section#top {
 }
 
 section#top .container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
 }
 section#top img {
 	display: none;
