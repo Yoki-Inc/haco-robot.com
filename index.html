@@ -164,16 +164,16 @@
 					<input type="hidden" name="recordType" value="0126F000001MhtU">
 					<label for="last_name">お名前</label>
 					<span class="last_name">
-						<input  id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="与喜" />
+						<input id="last_name" maxlength="80" name="last_name" size="20" type="text" placeholder="与喜" required>
 					</span>
 					<span class="first_name">
-						<input  id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="太郎" />
+						<input id="first_name" maxlength="40" name="first_name" size="20" type="text" placeholder="太郎" required>
 					</span>
 					<div class="clear"></div>
-					<label for="email">メール</label><input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="hi@example.com" /><br>
+					<label for="email">メール</label><input id="email" maxlength="80" name="email" size="20" type="email" placeholder="hi@example.com" required><br>
 					<label for="state">都道府県</label>
-					<select id="state" name="state" placeholder="選択して下さい">
-						<option value="" selected>都道府県</option>
+					<select id="state" name="state" placeholder="選択して下さい" required>
+						<option value="" selected>--都道府県を選択して下さい--</option>
 						<option value="北海道">北海道</option>
 						<option value="青森県">青森県</option>
 						<option value="岩手県">岩手県</option>

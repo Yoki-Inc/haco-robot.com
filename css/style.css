@@ -339,17 +339,11 @@ section#top {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-section#top .container{
-
-}
 section#top img {
 	display: none;
     width: 100%;
     height: auto;
 }
-
-
 section#top .text-container {
 	color: #FF4A7A;
 	text-shadow: 0px 0px 7px #ffffff8f;
@@ -359,6 +353,9 @@ section#top .text-container {
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	transform: translate(0, -50%);
+}
+section#top .text-container p {
+	margin-top: 0;
 }
 @media (max-width: 767px) {
 	section#top .text-container {
@@ -514,7 +511,7 @@ section#getstart label {
 section#getstart select {
 	color: #757575;
 }
-section#getstart input[type="text"], select {
+section#getstart input, select {
     font-size: 20px;
     padding: 0 10px;
     height: 50px;
@@ -524,12 +521,12 @@ section#getstart input[type="text"], select {
 	border: 1px solid #fff;
     background: #efefef;
 }
-section#getstart input[type="text"], select, label {
+section#getstart input, select, label {
 	width: 100%;
     border-radius: 0;
 	box-sizing: border-box;
 }
-section#getstart input[type="text"]:focus, select:focus {
+section#getstart input:focus, select:focus {
     border: 1px solid #313743;
     outline: 0;
 }
