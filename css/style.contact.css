@@ -1,0 +1,85 @@
+#contact {
+	margin-top: 70px;
+}
+#contact a {
+	text-decoration: underline;
+}
+#contact .form-container {
+	width: 70%;
+	box-sizing: border-box;
+}
+#contact p {
+	margin-top: 0;
+	opacity: 0.7;
+}
+#contact label {
+	display: block;
+	font-size: 20px;
+	line-height: 2em;
+}
+#contact input,
+#contact textarea,
+#contact button {
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 20px;
+	padding: 0 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-family: Avenir, "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif;
+	border: 1px solid #dfdfdf;
+}
+#contact input:focus, textarea:focus, button:focus {
+	border: 1px solid #00253A;
+	outline: 0;
+}
+#contact input {
+	height: 50px;
+}
+#contact textarea {
+	height: 200px;
+	padding: 10px;
+}
+#contact .agreement {
+	width: 103%;
+	text-align: center;
+}
+#contact .agreement span {
+	text-align: center;
+	font-size: 11px;
+	color: #313743;
+	font-weight: normal;
+}
+#contact .agreement span a {
+	color: inherit;
+}
+#contact button {
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+	padding: 10px 40px;
+	background: #fff;
+	color: #00253A;
+	font-weight: bold;
+	font-family: Avenir, "Noto Sans JP", -apple-system, BlinkMacSystemFont, "Noto Sans Japanese", "Yu Gothic Bold", "游ゴシック Bold", YuGothic, "游ゴシック体", "メイリオ", "Meiryo", sans-serif;
+	line-height: 1em;
+	transition: .3s;
+	border: 2px solid #00253A;
+}
+#contact button:hover {
+	background-color: #00253A;
+	color: #fff;
+	transition: .3s;
+	border: 2px solid #00253A;
+}
+#contact button:hover i {
+	color: #fff;
+}
+@media (max-width: 767px) {
+	#contact .form-container {
+		width: 100%!important;
+		box-sizing: border-box;
+	}
+}
