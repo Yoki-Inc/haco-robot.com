@@ -215,11 +215,16 @@ header #toggle img {
 		float: right;
 	}
 }
+@media (max-width: 800px) {
+	header nav ul li {
+		font-size: 16px;
+	}
+}
 @media (min-width: 768px) and (max-width: 991px) {
 	header .container {
 		max-width: none;
 	}
-	header ul li {
+	header nav ul li {
 		margin-right: 10px;
 	}
 }
