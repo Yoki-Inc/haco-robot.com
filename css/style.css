@@ -326,18 +326,50 @@ header #toggle .im {
 		#top
 					**/
 section#top {
-	height: 60vh;
 	margin-top: 70px;
+	position: relative;
+/*	height: 60vh;
 	position: relative;
 	background-image: url(../assets/top-bg.jpg);
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 }
-section#top img {
+/*section#top img {
 	display: none;
     width: 100%;
     height: auto;
+}*/
+section#top img.top-bg {
+	width: 100%;
+}
+@media (min-width: 1200px) {
+	section#top {
+		height: 70vh;
+		position: relative;
+		background-image: url(../assets/top-bg.jpg);
+		background-position-y: top;
+		background-position: 80%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	section#top .top-bg {
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+	section#top {
+		height: 70vh;
+		position: relative;
+		background-image: url(../assets/top-bg.jpg);
+		background-position-y: top;
+		background-position: 80%;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	section#top .top-bg {
+		display: none;
+	}
 }
 section#top .text-container {
 	color: #FF4A7A;
