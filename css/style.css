@@ -624,11 +624,9 @@ footer ul li a:hover {
 	opacity: 0.5;
 	transition: 0.3s opacity;
 }
-
-
-
-
-
+/**
+	  Completed Modal
+						**/
 #completed {
 	display: none;
 	width: 100vw;
@@ -657,9 +655,6 @@ footer ul li a:hover {
     line-height: 1.2em;
 }
 #completed button {
-
-}
-#completed button {
 	z-index: 100;
 	background: #000;
 	border: 0;
@@ -678,8 +673,6 @@ footer ul li a:hover {
 	opacity: 0.7;
 	transition: .3s opacity;
 }
-
-
 #successAnimationResult {
     fill: green!important;
 }
@@ -701,7 +694,6 @@ footer ul li a:hover {
             transform: scale(1);
   }
 }
-
 @keyframes scaleAnimation {
   0% {
     opacity: 0;
