@@ -40,8 +40,9 @@ p {
 }
 @media (max-width: 575px) {
 	p {
-		letter-spacing: 0em;
-	    text-align: left;
+		letter-spacing: 0.03em;
+		line-height: 1.7em;
+	    text-align: justify;
 	}
 }
 a {
@@ -98,6 +99,7 @@ h2 br {
 	}
 	#wcd h2 span {
 		position: relative;
+		padding-left: 6px;
 	}
 	#wcd h2 span:after {
 		background: linear-gradient(transparent 70%, #10CBCE 0%);
@@ -130,6 +132,7 @@ h2 br {
 	}
 	h2 span {
 		position: relative;
+		padding-left: 6px;
 	}
 	h2 span:after {
 		background: linear-gradient(transparent 70%, #10CBCE 0%);
@@ -160,7 +163,7 @@ h2 br {
 .container {
 	box-sizing: border-box;
 	width: 100%;
-	padding: 0 15px;
+	padding: 0 30px;
 	margin: 0 auto;
 }
 @media (min-width: 576px) {
@@ -423,6 +426,8 @@ section#message {
 @media (max-width: 767px) {
 	section#message {
 		display: block;
+		background: #efefef;
+		padding-bottom: 40px;
 	}
 }
 
@@ -643,6 +648,9 @@ section#getstart form {
     font-family: initial;
     box-shadow: 0px 0px 15px #00000021;
 }
+section#getstart form h2 br {
+	display: none;
+}
 section#getstart form p {
 	text-align: center;
 }
@@ -731,6 +739,12 @@ section#getstart span a {
 	}
 	section#getstart form {
 		padding: 30px;
+	}
+	section#getstart form h2 {
+		font-size: 30px;
+	}
+	section#getstart form h2 br {
+		display: block;
 	}
 }
 /**
