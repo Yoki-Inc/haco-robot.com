@@ -16,7 +16,8 @@
 			<script src="js/jquery-3.3.1.min.js"></script>
 	</head>
 <body>
-	<div class="loader active"></div>
+	<div class="loader in"><span>Loading</span></div>
+	<div class="loader out"><span>Loading</span></div>
 	<header id="header">
 		<div class="container nav-container">
 			<a href="https://www.haco-robot.com">
@@ -89,14 +90,14 @@ $(function(){
 </script>
 <script type="text/javascript">
 $(window).on('load', function(){
-	$('.loader').removeClass('active');
+	$('.loader.in').addClass('active');
 });
 $(function() {
-	$('a:not([href^="#"]):not([target])').on('click', function(e){
+	$('a:not([href^=""]):not([href^="#"]):not([target])').on('click', function(e){
 		e.preventDefault();
 		url = $(this).attr('href');
 		if (url !== '') {
-			$('.loader').addClass('active');
+			$('.loader.out').addClass('active');
 			setTimeout(function(){
 				window.location = url;
 			}, 800);
