@@ -36,6 +36,9 @@
 #contact input {
 	height: 50px;
 }
+#contact input::placeholder {
+	color: #c1c1c1;
+}
 #contact textarea {
 	height: 200px;
 	padding: 10px;

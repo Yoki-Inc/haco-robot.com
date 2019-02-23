@@ -25,6 +25,15 @@
 			<link href="css/style.contact.css" rel="stylesheet">
 			<!-- jQuery -->
 			<script src="js/jquery-3.3.1.min.js"></script>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134694037-2"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-134694037-2');
+			</script>
 	</head>
 <body>
 	<div class="loader in"><span>Loading</span></div>
@@ -68,7 +77,7 @@
 				<label for="phone">電話</label><input id="phone" maxlength="40" name="phone" type="tel" placeholder="050-5216-9687"><br>
 				<label for="description">お問い合わせ内容(必須)</label><textarea name="description" class="czr-focusable" required></textarea><br>
 				<div class="agreement">
-					<span>*この登録により、私は<a href="https://yoki-jp.com/legal">プライバシーポリシー</a>を読み、同意したことを表明します。</span>
+					<span>*このお問い合わせにより、私は<a href="https://yoki-jp.com/legal">プライバシーポリシー</a>を読み、同意したことを表明します。</span>
 				</div>
 				<button type="submit">
 					私たちに送る<i class="im im-smiley-o"></i>
@@ -116,14 +125,5 @@ $(function() {
 	return false;
 	});
 });
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134694037-2"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-
-gtag('config', 'UA-134694037-2');
 </script>
 </html>

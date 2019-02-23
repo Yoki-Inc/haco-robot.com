@@ -395,6 +395,9 @@ section#getstart input:focus, select:focus {
 	border: 1px solid #313743;
 	outline: 0;
 }
+section#getstart input::placeholder {
+	color: #c1c1c1;
+}
 section#getstart span.last_name {
 	padding-right: 10px;
 }
