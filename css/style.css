@@ -87,7 +87,7 @@
 		background: linear-gradient(transparent 60%, #1AD790 0%);
 	}
 }
-/** 
+/**
 	#top & #message
 					**/
 section#top {
@@ -154,7 +154,7 @@ section#top .text-container p {
 		display: none;
 	}
 }
-/** 
+/**
 		#product
 					**/
 section.box-content {
@@ -228,7 +228,7 @@ section#product #wcd {
 section#product .slider-container {
 	margin-bottom: 100px;
 	margin-left: auto;
-	margin-right: auto;	
+	margin-right: auto;
 }
 section#product .slider-container .fade {
 	display: none;
@@ -317,7 +317,7 @@ section#product .slider .circle-container .circle span {
 	}
 }
 /**
-		#getstart 
+		#getstart
 					**/
 section#getstart {
 	text-align: center;
@@ -458,6 +458,13 @@ section#getstart span a {
 	section#getstart form {
 		width: 75%;
 	}
+}
+.g-recaptcha {
+	text-align: center;
+	margin-top: 16px;
+}
+.g-recaptcha > div {
+	margin: 0 auto;
 }
 /**
 	  Completed Modal
