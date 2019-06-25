@@ -27,7 +27,7 @@
 		<!-- jQuery -->
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/slick.min.js"></script>
-				<!-- reCAPTCHA -->
+		<!-- reCAPTCHA -->
 		<script src="https://www.google.com/recaptcha/api.js"></script>
 		<script>
 		 function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
@@ -202,6 +202,7 @@
 				<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 					<h2>最新情報を<br>受け取りますか?</h2>
 					<p>イベントの開催やHACOに関する最新情報を<br class="hidden-xs">いち早く皆さまにお届けします。</p>
+					<input type=hidden name='captcha_settings' value='{"keyname":"reCAPTCHA_HACO_ROBOT_COM","fallback":"true","orgId":"00D6F000002VY7U","ts":""}'>
 					<input type=hidden name="oid" value="00D6F000002VY7U">
 					<input type=hidden name="retURL" value="https://haco-robot.com/?completed=true">
 					<input type=hidden name="lead_source" value="01 HACO-Waiting-List / www.haco-robot.com">
@@ -266,7 +267,8 @@
 						<option value="鹿児島県">鹿児島県</option>
 						<option value="沖縄県">沖縄県</option>
 					</select><br>
-					<span>*この登録により、私は<a href="https://yoki-jp.com/privacy_policy">プライバシーポリシー</a>を読み、同意したことを表明します。</span>
+					<div class="g-recaptcha" data-sitekey="6Lf4h6oUAAAAAGG574qd1DTCWX37E2m0_DOVZdIs"></div><br>
+					<span>*この登録により、私は<a href="https://legal.yoki.inc/Privacy-Policy/">プライバシーポリシー</a>を読み、同意したことを表明します。</span>
 					<input type="submit" name="submit" value="送信する">
 				</form>
 			</div>
